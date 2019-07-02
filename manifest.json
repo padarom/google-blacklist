@@ -1,0 +1,20 @@
+{
+    "name": "Google Blacklist",
+    "version": "1.0",
+    "description": "Blacklist any site from all of your Google search results",
+    "manifest_version": 2,
+    "permissions": [
+        "storage",
+        "webRequest",
+        "*://*.google.com/",
+        "webRequest",
+        "*://*.google.de/"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    }
+}
